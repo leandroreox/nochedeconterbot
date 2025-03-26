@@ -4,7 +4,7 @@
 ## Español
 
 ### Descripción General
-Este bot de WhatsApp ayuda a coordinar noches de juegos mediante un sistema de encuestas diarias con un mecanismo de seguimiento de asistencia basado en puntos. Fomenta la participación constante mediante recompensas y penalizaciones.
+Este bot de WhatsApp ayuda a coordinar noches de CONTER mediante un sistema de encuestas diarias con un mecanismo de seguimiento de asistencia basado en puntos. Fomenta la participación constante mediante recompensas y penalizaciones.
 
 ### Cómo Funciona
 
