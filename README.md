@@ -1,53 +1,6 @@
 # Gaming Night WhatsApp Bot 🎮
 # Bot de Noche de Juegos para WhatsApp 🎮
 
-## English
-
-### Overview
-This WhatsApp bot helps coordinate gaming nights by managing a daily poll system with a point-based attendance tracking mechanism. It encourages consistent participation through rewards and penalties.
-
-### How It Works
-
-#### Daily Schedule (Argentina Time - ART)
-- 20:00 (8 PM) - Daily poll is sent to the group
-- 21:00 (9 PM) - Game status is checked
-- 22:00 (10 PM) - Game time
-- 23:59 (11:59 PM) - Points are updated based on participation
-
-#### Point System
-- **Initial Points**: Every new member starts with 100 points
-- **Penalties**:
-  - Not responding to poll: -10 points
-  - Saying "no" to gaming night: -5 points
-  - Late cancellation (within 1 hour of game time): -15 points
-- **Rewards**:
-  - Attending a game night: +3 points
-  - Maximum points cap: 100 points
-
-#### Elimination System
-- When a player's points reach 0, an elimination poll is created
-- Active players vote to decide if the player should remain in the group
-- Points can be recovered through consistent attendance
-
-### Setup Requirements
-1. WhatsApp Business API credentials
-2. Python 3.7+
-3. Required packages: 
-   ```
-   pip install schedule whatsapp-api-client-python
-   ```
-4. Configure the bot by editing `config.py`:
-   - Add your WhatsApp phone number
-   - Add your API key
-   - Add your group ID
-
-### Running the Bot
-```
-python bot.py
-```
-
----
-
 ## Español
 
 ### Descripción General
@@ -104,3 +57,53 @@ WHATSAPP_CONFIG = {
     "GROUP_ID": "group-id-here"
 }
 ```
+
+---
+
+
+## English
+
+### Overview
+This WhatsApp bot helps coordinate gaming nights by managing a daily poll system with a point-based attendance tracking mechanism. It encourages consistent participation through rewards and penalties.
+
+### How It Works
+
+#### Daily Schedule (Argentina Time - ART)
+- 20:00 (8 PM) - Daily poll is sent to the group
+- 21:00 (9 PM) - Game status is checked
+- 22:00 (10 PM) - Game time
+- 23:59 (11:59 PM) - Points are updated based on participation
+
+#### Point System
+- **Initial Points**: Every new member starts with 100 points
+- **Penalties**:
+  - Not responding to poll: -10 points
+  - Saying "no" to gaming night: -5 points
+  - Late cancellation (within 1 hour of game time): -15 points
+- **Rewards**:
+  - Attending a game night: +3 points
+  - Maximum points cap: 100 points
+
+#### Elimination System
+- When a player's points reach 0, an elimination poll is created
+- Active players vote to decide if the player should remain in the group
+- Points can be recovered through consistent attendance
+
+### Setup Requirements
+1. WhatsApp Business API credentials
+2. Python 3.7+
+3. Required packages: 
+   ```
+   pip install schedule whatsapp-api-client-python
+   ```
+4. Configure the bot by editing `config.py`:
+   - Add your WhatsApp phone number
+   - Add your API key
+   - Add your group ID
+
+### Running the Bot
+```
+python bot.py
+```
+
+---
